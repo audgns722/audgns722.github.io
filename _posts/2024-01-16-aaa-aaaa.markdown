@@ -7,6 +7,6 @@ published: true
 ---
 
 블로그 첫글 게시!
-![localhost_3001_list.png](../assets/img/localhost_3001_list.png)
+![localhost_3001_list.png]({{site.url}}/assets/img/localhost_3001_list.png)
 
 글 수정 테스트
