@@ -1,7 +1,4 @@
 ---
-published: true
----
----
 layout: post
 title: Conference on Javascript
 date: 2024-01-16 15:42:00 +0300
