@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Myeong Hun
-  tagline: Front-End Developer
+  tagline: 계획을 세우고 이를 따라가는 것을 좋아하며, 조용한 집중력으로 세세한 부분까지 신경 쓰는 것을 즐깁니다.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
