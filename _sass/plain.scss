@@ -391,3 +391,8 @@ footer {
 .utterances {
   max-width: 100% !important;
 }
+
+.content .posts li:nth-child(1) {
+  max-height: 300px;
+  overflow-y: hidden;
+}
