@@ -6,4 +6,7 @@ categories: jekyll update
 published: true
 ---
 
-블로그 첫글 게시
+블로그 첫글 게시!
+[localhost_3001_list.png]({{site.baseurl}}/_posts/localhost_3001_list.png)
+
+글 수정 테스트
