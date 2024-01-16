@@ -1,0 +1,53 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 03
+date: "2024-01-16 22:22:48 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘02(할 일 목록)</h4>
+![UnsplashRandom](https://source.unsplash.com/random/?programming)
+
+<br>
+코딩 기초 트레이닝 : 할 일 목록
+
+```javascript
+function solution(todo_list, finished) {
+  var answer = [];
+  return answer;
+}
+```
+
+문제 설명
+
+- 오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요
+
+제한사항
+
+- 1 ≤ todo_list의 길이 1 ≤ 100
+- 2 ≤ todo_list의 원소의 길이 ≤ 20
+- todo_list의 원소는 영소문자로만 이루어져 있습니다.
+- todo_list의 원소는 모두 서로 다릅니다.
+- finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음을 나타냅니다.
+- 아직 마치지 못한 일이 적어도 하나 있습니다.
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(todo_list, finished) {
+  var answer = [];
+
+  for (let i = 0; i < todo_list.length; i++) {
+    if (!finished[i]) {
+      answer.push(todo_list[i]);
+    }
+  }
+  return answer;
+}
+```
+
+todo_list 배열에는 할 일들이 저장되어 있고, finished 배열은 각 할 일이 완료되었는지 여부를 나타냅니다.<br>
+todo_list 배열을 순회하면서 각 항목의 finished 값이 false인 경우에만 answer 배열에 추가합니다.<br>
+`push() 배열 끝에 요소를 추가하고, 배열의 새로운 길이값을 반환합니다.`
