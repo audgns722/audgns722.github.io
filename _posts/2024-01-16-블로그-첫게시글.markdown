@@ -1,8 +1,9 @@
 ---
-published: true
 layout: post
+title: 첫 블로그 게시글
 date: '2024-01-16 16:03:36 +0530'
-categories: Javascript NodeJS
+categories: Blog Github
+published: true
 ---
 ## 첫 게시글 테스트
 
