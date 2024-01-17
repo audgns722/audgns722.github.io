@@ -1,0 +1,50 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 05
+date: "2024-01-17 22:27:41 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘05(덧셈식 출력하기)</h4>
+![UnsplashRandom](https://source.unsplash.com/random/?programming)
+
+<br>
+코딩 기초 트레이닝 : 덧셈식 출력하기
+
+```javascript
+let input = [];
+
+rl.on("line", function (line) {
+  input = line.split(" ");
+}).on("close", function () {
+  console.log(Number(input[0]) + Number(input[1]));
+});
+```
+
+문제 설명
+
+- 두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
+  `a + b = c`
+
+제한사항
+
+- 1 ≤ a, b ≤ 100
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+let input = [];
+
+rl.on("line", function (line) {
+  input = line.split(" ");
+}).on("close", function () {
+  const sum = Number(input[0]) + Number(input[1]);
+  console.log(`${input[0]} + ${input[1]} = ${sum}`);
+});
+```
+
+문자열(line)을 공백으로 분리하여 input 배열에 저장합니다.<br>
+input 배열의 첫 번째(input[0])와 두 번째(input[1]) 요소를 숫자로 변환하여 더합니다.<br>
+템플릿 리터럴을 사용하여 변수와 문자열을 쉽게 결합할 수 있습니다.

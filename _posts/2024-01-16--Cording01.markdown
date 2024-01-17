@@ -14,12 +14,6 @@ permalink: "/post/:title"
 코딩 기초 트레이닝 : 문자열 출력하기
 
 ```javascript
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
 let input = [];
 
 rl.on("line", function (line) {
@@ -43,12 +37,6 @@ rl.on("line", function (line) {
 <h4>🤭 내가 풀이한 답</h4>
 
 ```javascript
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
 let input = [];
 
 rl.on("line", function (line) {

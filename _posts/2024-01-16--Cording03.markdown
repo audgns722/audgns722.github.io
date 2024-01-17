@@ -7,7 +7,7 @@ categories: Programmers Javascript
 permalink: "/post/:title"
 ---
 
-<h4>🤭 JavaScript 프로그래머스 알고리즘02(할 일 목록)</h4>
+<h4>🤭 JavaScript 프로그래머스 알고리즘03(할 일 목록)</h4>
 ![UnsplashRandom](https://source.unsplash.com/random/?programming)
 
 <br>
