@@ -1,0 +1,42 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 02
+date: "2024-01-16 22:10:28 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘02(대문자로 바꾸기)</h4>
+![UnsplashRandom](https://source.unsplash.com/random/?programming)
+
+<br>
+코딩 기초 트레이닝 : 대문자로 바꾸기
+
+```javascript
+function solution(myString) {
+  var answer = "";
+  return answer;
+}
+```
+
+문제 설명
+
+- 알파벳으로 이루어진 문자열 myString이 주어집니다. 모든 알파벳을 대문자로 변환하여 -return 하는 solution 함수를 완성해 주세요.
+
+제한사항
+
+- 1 ≤ myString의 길이 ≤ 100,000
+- myString은 알파벳으로 이루어진 문자열입니다.
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(myString) {
+  var answer = myString.toUpperCase();
+  return answer;
+}
+```
+
+solution 함수는 입력받은 문자열 myString을 대문자로 변환한 후, 그 결과를 answer에 저장하고 반환합니다.<br>
+toUpperCase() 메소드는 문자열에 대해 호출되어야 하며, 이 메소드는 해당 문자열의 모든 알파벳을 대문자로 변환한 새 문자열을 반환합니다.

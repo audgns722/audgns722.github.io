@@ -2,12 +2,12 @@
 layout: post
 title: JavaScript 프로그래머스 알고리즘 01
 date: "2024-01-16 22:00:48 +0900"
-published: false
+published: true
 categories: Programmers Javascript
 permalink: "/post/:title"
 ---
 
-<h4>🤭 JavaScript 프로그래머스 알고리즘01(문자열 반복해서 출력하기)</h4>
+<h4>🤭 JavaScript 프로그래머스 알고리즘(문자열 반복해서 출력하기)</h4>
 ![UnsplashRandom](https://source.unsplash.com/random/?programming)
 
 <br>
@@ -60,5 +60,5 @@ rl.on("line", function (line) {
 });
 ```
 
-solution 함수는 입력받은 문자열 myString을 대문자로 변환한 후, 그 결과를 answer에 저장하고 반환합니다.<br>
-toUpperCase() 메소드는 문자열에 대해 호출되어야 하며, 이 메소드는 해당 문자열의 모든 알파벳을 대문자로 변환한 새 문자열을 반환합니다.
+str.repeat(n)을 사용하여 str을 n번 반복한 문자열을 생성하고, 이를 콘솔에 출력합니다.<br >
+입력값 : "string 5" // 출력값 : stringstringstringstringstring
