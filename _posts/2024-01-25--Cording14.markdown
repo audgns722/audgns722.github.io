@@ -1,0 +1,51 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 14
+date: "2024-01-25 23:48:11 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘14(flag에 따라 다른 값 반환하기)</h4>
+
+<br>
+코딩 기초 트레이닝 : flag에 따라 다른 값 반환하기
+
+```javascript
+function solution(a, b, flag) {
+  var answer = 0;
+  return answer;
+}
+```
+
+문제 설명
+
+    두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면 a - b를 return 하는 solution 함수를 작성해 주세요.
+
+제한사항
+
+    -1,000 ≤ a, b ≤ 1,000
+
+입출력예
+
+    a	b	flag	result
+    -4	7	true	3
+    -4	7	false	-11
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(a, b, flag) {
+  var answer = 0;
+  if (flag) {
+    answer = a + b;
+  } else {
+    answer = a - b;
+  }
+  return answer;
+}
+```
+
+    두 개의 정수 a와 b를 받아서 flag 값에 따라 덧셈 또는 뺄셈을 수행하여 결과를 반환하는 함수입니다.
+    flag가 true일 때는 덧셈을 수행하고, false일 때는 뺄셈을 수행합니다.

@@ -1,0 +1,48 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 11
+date: "2024-01-21 20:27:57 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘11(문자열 곱하기)</h4>
+
+<br>
+코딩 기초 트레이닝 : 문자열 곱하기
+
+```javascript
+function solution(my_string, k) {
+  var answer = "";
+  return answer;
+}
+```
+
+문제 설명
+
+    문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+제한사항
+
+    1 ≤ my_string의 길이 ≤ 100
+    my_string은 영소문자로만 이루어져 있습니다.
+    1 ≤ k ≤ 100
+
+입출력예
+
+    my_string	k	result
+    "string"	3	"stringstringstring"
+    "love"	    10	"lovelovelovelovelovelovelovelovelovelove"
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(my_string, k) {
+  var answer = my_string.repeat(k);
+  return answer;
+}
+```
+
+    my_string 문자열을 k번 반복하여 연결한 새 문자열을 반환합니다.
+    예를 들어, solution("abc", 3)을 호출하면 "abcabcabc"를 반환합니다.

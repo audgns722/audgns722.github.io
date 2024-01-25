@@ -1,0 +1,50 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 12
+date: "2024-01-21 21:01:17 +0900"
+published: true
+categories: Programmers Javascript
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘12(공배수)</h4>
+
+<br>
+코딩 기초 트레이닝 : 공배수
+
+```javascript
+function solution(number, n, m) {
+  var answer = 0;
+  return answer;
+}
+```
+
+문제 설명
+
+    정수 number와 n, m이 주어집니다. number가 n의 배수이면서 m의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+
+제한사항
+
+    10 ≤ number ≤ 100
+    2 ≤ n, m < 10
+
+입출력예
+
+    number	n	m	result
+    60	    2	3	1
+    55	    10	5	0
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(number, n, m) {
+  var answer = 0;
+  if (number % n === 0 && number % m === 0) {
+    return (answer = 1);
+  }
+  return answer;
+}
+```
+
+    number가 n과 m의 배수인 경우에만 answer를 1로 설정하고, 그 외의 경우에는 0으로 설정하여 반환합니다.
+    예를 들어, solution(12, 3, 4)를 호출하면 12는 3의 배수이면서 4의 배수이므로 1을 반환합니다.

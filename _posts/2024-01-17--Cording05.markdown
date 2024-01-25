@@ -8,7 +8,6 @@ permalink: "/post/:title"
 ---
 
 <h4>🤭 JavaScript 프로그래머스 알고리즘05(덧셈식 출력하기)</h4>
-![UnsplashRandom](https://source.unsplash.com/random/?programming)
 
 <br>
 코딩 기초 트레이닝 : 덧셈식 출력하기
