@@ -1,0 +1,52 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 25
+date: "2024-01-29 23:13:21 +0900"
+published: true
+categories: Programmers입문
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘25(양꼬치)</h4>
+
+<br>
+코딩 기초 트레이닝 : 양꼬치
+
+```javascript
+function solution(n, k) {
+  var answer = 0;
+  return answer;
+}
+```
+
+문제 설명
+
+    머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 줍니다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원입니다. 정수 n과 k가 매개변수로 주어졌을 때, 양꼬치 n인분과 음료수 k개를 먹었다면 총얼마를 지불해야 하는지 return 하도록 solution 함수를 완성해보세요.
+
+제한사항
+
+    0 < n < 1,000
+    n / 10 ≤ k < 1,000
+    서비스로 받은 음료수는 모두 마십니다.
+
+입출력예
+
+    n	k	result
+    10	3	124,000
+    64	6	768,000
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(n, k) {
+  let free = Math.floor(n / 10);
+  let pay = Math.max(k - free, 0);
+
+  return n * 12000 + pay * 2000;
+}
+```
+
+    free 변수에 양꼬치 n 인분을 10으로 나누고 소수점 아래를 버린 값을 저장합니다. 이 값은 먹은 양꼬치에 대한 음료수 서비스 횟수를 나타냅니다.
+    pay 변수에 음료수 k 개에서 먹은 양꼬치에 대한 서비스 횟수인 free를 뺀 값을 저장합니다.
+    만약 k가 free보다 작으면 pay는 0이 됩니다.
+    총 지불해야 하는 금액을 계산합니다. 양꼬치 1인분에 12,000원이고, 음료수 1개에 2,000원이므로 n 개의 양꼬치와 pay 개의 음료수를 지불해야 합니다.

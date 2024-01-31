@@ -3,7 +3,7 @@ layout: post
 title: JavaScript 프로그래머스 알고리즘 14
 date: "2024-01-25 23:48:11 +0900"
 published: true
-categories: Programmers Javascript
+categories: Programmers
 permalink: "/post/:title"
 ---
 

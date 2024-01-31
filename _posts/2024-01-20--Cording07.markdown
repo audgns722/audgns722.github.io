@@ -3,7 +3,7 @@ layout: post
 title: JavaScript 프로그래머스 알고리즘 07
 date: "2024-01-20 20:01:18 +0900"
 published: true
-categories: Programmers Javascript
+categories: Programmers
 permalink: "/post/:title"
 ---
 
@@ -58,6 +58,6 @@ function solution(a, b, c) {
 }
 ```
 
-- solution 함수를 세 번 호출하며, 각각의 호출에서 다른 a, b, c 값들을 사용합니다.   
-- 첫 번째 호출에서는 모든 숫자가 다른 경우를, 두 번째 호출에서는 두 숫자가 같은 경우를, 세 번째 호출에서는 모든 숫자가 같은 경우를 테스트합니다.   
+- solution 함수를 세 번 호출하며, 각각의 호출에서 다른 a, b, c 값들을 사용합니다.
+- 첫 번째 호출에서는 모든 숫자가 다른 경우를, 두 번째 호출에서는 두 숫자가 같은 경우를, 세 번째 호출에서는 모든 숫자가 같은 경우를 테스트합니다.
 - 결과는 각각 해당 경우에 맞게 계산된 점수를 출력합니다.

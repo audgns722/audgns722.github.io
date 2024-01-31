@@ -1,0 +1,47 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 18
+date: "2024-01-27 23:11:11 +0900"
+published: true
+categories: Programmers입문
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘18(세균 증식)</h4>
+
+<br>
+코딩 기초 트레이닝 : 세균 증식
+
+```javascript
+function solution(n, t) {
+  var answer = 0;
+  return answer;
+}
+```
+
+문제 설명
+
+    어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 n과 경과한 시간 t가 매개변수로 주어질 때 t시간 후 세균의 수를 return하도록 solution 함수를 완성해주세요.
+
+제한사항
+
+    1 ≤ n ≤ 10
+    1 ≤ t ≤ 15
+
+입출력예
+
+    n	t	result
+    2	10	2048
+    7	15	229,376
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(n, t) {
+  return n * Math.pow(2, t);
+}
+```
+
+    세균의 수 n을 주어진 시간 t동안의 증식을 반영하여 계산합니다.
+    Math.pow(2, t)를 사용하여 2의 t승을 계산하여 세균의 증식을 나타냅니다.
+    초기 세균의 수 n에 증식을 반영하여 최종 세균의 수를 계산합니다.

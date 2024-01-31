@@ -3,7 +3,7 @@ layout: post
 title: JavaScript 프로그래머스 알고리즘 09
 date: "2024-01-20 23:15:17 +0900"
 published: true
-categories: Programmers Javascript
+categories: Programmers
 permalink: "/post/:title"
 ---
 
@@ -15,11 +15,11 @@ permalink: "/post/:title"
 ```javascript
 let input = [];
 
-rl.on('line', function (line) {
-    input = line.split(' ');
-}).on('close', function () {
-    str1 = input[0];
-    str2 = input[1];
+rl.on("line", function (line) {
+  input = line.split(" ");
+}).on("close", function () {
+  str1 = input[0];
+  str2 = input[1];
 });
 ```
 
@@ -49,14 +49,13 @@ rl.on('line', function (line) {
 ```javascript
 let input = [];
 
-rl.on('line', function (line) {
-    input = line.split(' ');
-}).on('close', function () {
-    str1 = input[0];
-    str2 = input[1];
-    console.log(str1 + str2);
+rl.on("line", function (line) {
+  input = line.split(" ");
+}).on("close", function () {
+  str1 = input[0];
+  str2 = input[1];
+  console.log(str1 + str2);
 });
 ```
 
     한 줄의 입력을 받아 두 문자열을 분리한 후, str1과 str2를 연결하여 출력합니다. console.log(str1 + str2)는 두 문자열을 이어붙인 결과를 출력합니다.
-

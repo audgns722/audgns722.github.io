@@ -1,0 +1,61 @@
+---
+layout: post
+title: JavaScript 프로그래머스 알고리즘 19
+date: "2024-01-27 23:27:11 +0900"
+published: true
+categories: Programmers입문
+permalink: "/post/:title"
+---
+
+<h4>🤭 JavaScript 프로그래머스 알고리즘19(저주의 숫자 3)</h4>
+
+<br>
+코딩 기초 트레이닝 : 저주의 숫자 3
+
+```javascript
+function solution(n) {
+  var answer = 0;
+  return answer;
+}
+```
+
+문제 설명
+
+    3x 마을 사람들은 3을 저주의 숫자라고 생각하기 때문에 3의 배수와 숫자 3을 사용하지 않습니다. 3x 마을 사람들의 숫자는 다음과 같습니다.
+
+    10진법	3x 마을에서 쓰는 숫자	10진법	3x 마을에서 쓰는 숫자
+    1	     1	                     6	    8
+    2	     2	                     7	    10
+    3	     4	                     8	    11
+    4	     5	                     9	    14
+    5	     7	                     10    	16
+    정수 n이 매개변수로 주어질 때, n을 3x 마을에서 사용하는 숫자로 바꿔 return하도록 solution 함수를 완성해주세요.
+
+제한사항
+
+    1 ≤ n ≤ 100
+
+입출력예
+
+    n	result
+    15	25
+    40	76
+
+<h4>🤭 내가 풀이한 답</h4>
+
+```javascript
+function solution(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 || String(i).includes("3")) n += 1;
+  }
+  return n;
+}
+```
+
+    for 루프를 사용하여 1부터 n까지의 모든 정수를 순회합니다.
+    각 정수 i에 대해 if 문을 사용하여 두 가지 조건을 검사합니다
+      - i가 3의 배수인지 확인합니다. (i % 3 === 0)
+      - i를 문자열로 변환한 후에 문자열에 '3'이 포함되어 있는지 확인합니다.
+      - (String(i).includes('3'))
+    만약 위의 어느 하나의 조건에 해당한다면, n에 1을 더합니다. 이것은 3x 마을의 규칙에 따라 숫자를 바꾸는 부분입니다.
+    마지막으로 변환된 n을 반환합니다.

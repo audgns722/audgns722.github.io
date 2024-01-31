@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://github.com/audgns722
 date_format: "ordinal"
 title: Dev Hun`s
 subtitle: "Hello MyeongHun Blog"
@@ -91,8 +91,7 @@ navs:
   #   hidden: true
 
   - href: /links/
-    label: Links
-    mobile-hidden: true
+    label: Project
 
   - href: /about/
     label: About
