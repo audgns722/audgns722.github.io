@@ -1,6 +1,8 @@
-- name: 码志
-  url: http://mazhuang.org
+- name: Portfolio
+  url: https://myeonghunportfolio.fly.dev/
   src: life
 
-
+- name: Github
+  url: https://github.com/audgns722
+  src: life
 
